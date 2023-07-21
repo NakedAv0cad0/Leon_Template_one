@@ -38,6 +38,8 @@ body {
 .decoration-none,a {
     text-decoration: none;
     list-style-type: none;
+    color: #333;
+    font-weight: 600;
 }
 /* End Frame Works */
 /* Start Header style */
@@ -45,7 +47,6 @@ body {
     width: 70px;
 }
 header {
-    background-color: #eee;
     padding: 20px;
 }
 header .container {
@@ -56,8 +57,37 @@ header .container {
 header .container #links{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+    position: relative;
 }
+header .container #links #nav-bar {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 70%;
+    padding-right: 100px;
+    background-color: #eee;
+    visibility: hidden;
+    padding-left: 15px;
+}
+header .container #links #nav-bar::before {
+    content: "";
+    border-top: solid 15px black;
+    position: absolute;
+}
+header .container #links #nav-bar li {
+    position: relative;
+    margin-bottom: 8px;
+}
+header .container #links #nav-bar li::before {
+    content: "";
+    border: 9px solid black;
+    border-color: transparent transparent transparent lightblue;
+    height: 0.5px;
+    position: absolute;
+    left: -10px;
+}
+/* Start Berger Icon */
 header .container #links #icon-b {
     display: flex;
     flex-wrap: wrap;
@@ -80,13 +110,9 @@ header .container #icon-b:hover span:nth-child(2){
 header .container #icon-b span:last-child {
     margin-bottom: 0;
 }
-header .container #links #nav-bar {
-    visibility: hidden;
-}
+/* End Berger Icon */
 header .container #links #icon-b:hover ~#nav-bar{
     visibility: visible;
 }
-header .container #links #icon-b:hover ~#nav-bar:hover{
-    visibility: visible;
-}
+
 /* End Header style */
