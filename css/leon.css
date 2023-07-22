@@ -1,3 +1,10 @@
+/* Start Variabls */
+:root {
+    --main-green: #10cab7;
+    --main-black: #333;
+    --alt-black: #666;
+}
+/* End Variabls */
 /*Start Global Rules */
 * {
     box-sizing: border-box;
@@ -131,7 +138,7 @@ header .container #links #nav-bar li:not(:last-child) {
 /* End ancore styel */
 /* End Header style */
 /* Start Landing style */
-.landing {
+#landing {
     background-image: url('/images/landing.jpg');
     background-size: cover;
     display: flex;
@@ -140,19 +147,43 @@ header .container #links #nav-bar li:not(:last-child) {
     align-items: center;
     flex-wrap: nowrap;
 }
-.intro-text {
+#intro-text {
     margin-bottom: 200px;
 }
-.intro-text h1 {
+#intro-text h1 {
     font-size: 3em;
     letter-spacing: 1px;
     margin-bottom: 2vh;
-    color: #10cab7;
+    color: var(--main-green);
 }
-.intro-text p {
+#intro-text p {
     font-size: 1.2em;
 }
-.intro-text p br {
+#intro-text p br {
     line-height: 2;
 }
 /* End Landing style */
+/* Start service ad seciont */
+#service-ad {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 300px;
+    width: 65%;
+    margin: 0 auto;
+}
+#service-ad #one,#two,#three{
+    display: grid;
+    /* justify-content: center; */
+    margin-top: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 50px;
+    text-align: center;
+    padding: 0 35px;
+}
+#service-ad i{
+    color: var(--main-green);   
+}
+#service-ad p{
+    color: #666;
+}
+/* End service ad seciont */
