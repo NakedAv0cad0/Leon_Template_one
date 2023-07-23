@@ -254,14 +254,14 @@ header .container #links #nav-bar li:not(:last-child) {
 /* End services section */
 /* Start Portfolio section */
 #portfolio {
-    height: 600px;
+    height: 800px;
     width: 80%;
     padding: 0 10%;
     margin: 0 auto;
 }
 #portfolio::before {
     content: "";
-    height: 600px;
+    height: 800px;
     width: 100%;
     background-color: #eee;
     float: left;
@@ -281,6 +281,13 @@ header .container #links #nav-bar li:not(:last-child) {
 #projects h3 {
     margin: 20px 0;
     text-align: center;
+}
+#projects p {
+    padding: 10px;
+}
+#projects .project {
+    background-color: white;
+    padding-bottom:30px;
 }
 /* End Portfolio section */
 /* Start About section */
@@ -342,11 +349,10 @@ header .container #links #nav-bar li:not(:last-child) {
 /* Start Contact section */
 #contact {
     width: 100%;
-    margin: 0 auto;
     background-color: #eee;
-    height: 400px;
+    height: 550px;
 }
-#contact h1,p {
+#contact .mail,#s-network {
     text-align: center;
     margin: 30px 0;
 }
@@ -359,3 +365,21 @@ h1 a{
     color: var(--main-black);
 }
 /* End Contact section */
+/* Start footer section */
+footer {
+    background-color: var(--alt-green);
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer span,footer p {
+    /* font-weight: bold; */
+    font-size: larger;
+    color: white;
+}
+footer span {
+    color: var(--main-green);
+}
+/* End footer section */
