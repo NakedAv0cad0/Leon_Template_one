@@ -1,6 +1,7 @@
 /* Start Variabls */
 :root {
     --main-green: #10cab7;
+    --alt-green: #2c4755;
     --main-black: #333;
     --alt-black: #666;
 }
@@ -168,8 +169,9 @@ header .container #links #nav-bar li:not(:last-child) {
     display: grid;
     grid-template-columns: repeat(3, auto);
     height: 300px;
-    width: 65%;
     margin: 0 auto;
+    background-color: #eee;
+    padding: 0 17.5%;
 }
 #service-ad #one,#two,#three{
     display: grid;
@@ -186,4 +188,69 @@ header .container #links #nav-bar li:not(:last-child) {
 #service-ad p{
     color: #666;
 }
-/* End service ad seciont */
+/* End service ad section */
+/* Start services section */
+#services {
+    height: 600px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.light {
+    text-align: center;
+    font-size: 10vh;
+    color: #99999931;
+    margin-bottom: 0;
+    padding: 0;
+}
+#services > p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position:relative;
+    top: -35px;
+    font-weight: 300;
+    font-size: larger;
+    color: #666;
+}
+#services > .container {
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    grid-template-rows: repeat(2, 200px);
+    column-gap: 10px;
+    margin-top: 100px;
+    grid-template-areas: "one two side" "three four side";
+}
+#services #side {
+    grid-area: side;
+}
+#services .one,.two,.three,.four{
+    display: grid;
+    grid-template-columns: 60px 1fr 90px;
+    grid-template-rows: auto 1fr;
+}
+#services i {
+    grid-area: 1/1/2/1;
+    color: var(--main-green);
+}
+#services p{
+    grid-area: 2/2/2/2;
+    font-size: 14px;
+}
+#services #pilar{
+    height: 400px;
+    width: 80px;
+    background-color: var(--alt-green);
+    position: relative;
+    left: 50%;
+}
+#services img {
+    border-style: none;
+    width: 220px;
+    position: relative;
+    top: -350px;
+    height: 300px;
+}
+/* End services section */
+/* Start Portfolio section */
+/* End Portfolio section */
