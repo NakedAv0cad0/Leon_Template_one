@@ -286,6 +286,56 @@ header .container #links #nav-bar li:not(:last-child) {
 /* Start About section */
 #content {
     display: flex;
-
+    width: 90%;
+    margin: 100px auto 0;
+    justify-content: space-evenly;
+    height: 600px;
+}
+#content img {
+    width: 270px;
+}
+#content #art {
+    position: relative;
+}
+#content #art::before{
+    content: "";
+    position: absolute;
+    background-color: #eee;
+    height: 455px;
+    width: 60px;
+    top: -25px;
+    z-index: -1;
+    left: -40px;
+}
+#content #art::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-green);
+    height: 315px;
+    width: 60px;
+    top: -25px;
+    z-index: -1;
+    right: -40px;
+}
+#content #supp{
+    position: absolute;
+    background-color: var(--main-green);
+    height: 60px;
+    width: 100px;
+    top: 290px;
+    z-index: -1;
+    right: -100px;
+}
+#article {
+    width: 570px;
+    padding: 50px;
+}
+#hr {
+    background-color: var(--main-green);
+    height: 2px;
+    width: 100%
+}
+#article p:last-of-type {
+    color: #666;
 }
 /* End About section */
