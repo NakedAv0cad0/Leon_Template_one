@@ -79,7 +79,7 @@ header .container #links #icon-b span:last-child {
     margin-bottom: 0;
 }
 /* End Berger Icon */
-header .container #links #icon-b:hover ~#nav-bar{
+header .container #links:hover #nav-bar{
     display: block;
 }
 header .container #links #nav-bar {
@@ -103,12 +103,6 @@ header .container #links #nav-bar::before {
     right: 20px;
     top: -30px;
 }
-/* header .container #links #nav-bar li {
-    position: relative;
-    list-style-type: none;
-    color: #333;
-
-} */
 header .container #links #nav-bar li a::before {
     content: "";
     border: 9px solid black;
