@@ -203,7 +203,7 @@ header .container #links #nav-bar li:not(:last-child) {
     margin-bottom: 0;
     padding: 0;
 }
-#services > p {
+.comment {
     text-align: center;
     padding: 0;
     margin: 0;
@@ -253,4 +253,39 @@ header .container #links #nav-bar li:not(:last-child) {
 }
 /* End services section */
 /* Start Portfolio section */
+#portfolio {
+    height: 600px;
+    width: 80%;
+    padding: 0 10%;
+    margin: 0 auto;
+}
+#portfolio::before {
+    content: "";
+    height: 600px;
+    width: 100%;
+    background-color: #eee;
+    float: left;
+    position: absolute;
+    left:0;
+    z-index: -1;
+}
+#projects {
+    margin: 100px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 20px;
+}
+#projects img{
+    width: 100%;
+}
+#projects h3 {
+    margin: 20px 0;
+    text-align: center;
+}
 /* End Portfolio section */
+/* Start About section */
+#content {
+    display: flex;
+
+}
+/* End About section */
