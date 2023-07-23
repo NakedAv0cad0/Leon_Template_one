@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Work Sans", sans-serif;
@@ -224,7 +225,7 @@ header .container #links #nav-bar li:not(:last-child) {
 #services #side {
     grid-area: side;
 }
-#services .one,.two,.three,.four{
+#services .domain{
     display: grid;
     grid-template-columns: 60px 1fr 90px;
     grid-template-rows: auto 1fr;
@@ -233,7 +234,7 @@ header .container #links #nav-bar li:not(:last-child) {
     grid-area: 1/1/2/1;
     color: var(--main-green);
 }
-#services p{
+#services .domain p{
     grid-area: 2/2/2/2;
     font-size: 14px;
 }
