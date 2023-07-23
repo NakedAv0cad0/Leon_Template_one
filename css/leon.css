@@ -50,7 +50,7 @@ body {
     width: 60px;
 }
 header {
-    padding: 20px;
+    padding: 10px;
 }
 header .container {
     display: flex;
@@ -144,39 +144,40 @@ header .container #links #nav-bar li:not(:last-child) {
     background-image: url('/images/landing.jpg');
     background-size: cover;
     display: flex;
-    height: 1080px;
+    height: calc(100vh - 40px);
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
 }
 #intro-text {
     margin-bottom: 200px;
+    max-width: 320px;
 }
 #intro-text h1 {
     font-size: 3em;
     letter-spacing: 1px;
     margin-bottom: 2vh;
     color: var(--main-green);
+    text-align: center;
 }
 #intro-text p {
     font-size: 1.2em;
-}
-#intro-text p br {
-    line-height: 2;
+    text-align: center;
+    line-height: 1.5;
 }
 /* End Landing style */
 /* Start service ad seciont */
 #service-ad {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    height: 300px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
     background-color: #eee;
-    padding: 0 17.5%;
+    padding: 60px 0;
+    column-gap: 10px;
 }
-#service-ad #one,#two,#three{
+#service-ad .feat{
     display: grid;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 50px;
     grid-template-columns: auto;
     grid-template-rows: 100px 50px;
@@ -188,6 +189,7 @@ header .container #links #nav-bar li:not(:last-child) {
 }
 #service-ad p{
     color: #666;
+    max-width: 350px;
 }
 /* End service ad section */
 /* Start services section */
