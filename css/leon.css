@@ -24,26 +24,62 @@ body {
 }
 /* media query */
 /* Small */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .container {
-      width: 750px;
+      width: 100%;
+    }
+    .light {
+        font-size: 9vh;
+    }
+    .feat{
+        margin-top: 20px;
     }
   }
   /* Medium */
-  @media (min-width: 992px) {
+  @media (max-width: 992px) and (min-width: 768px) {
     .container {
-      width: 970px;
+      width: 90%;
+    }
+    .light {
+        font-size: 10vh;
     }
   }
   /* Large */
-  @media (min-width: 1200px) {
+  @media (max-width: 1200px) and (min-width: 992px) {
     .container {
-      width: 1170px;
+      width: 80%;
+    }
+    .light {
+        font-size: 10vh;
     }
   }
+  @media (min-width: 1200px) {
+    .container {
+      width: 70%;
+    }
+    .light {
+        font-size: 10vh;
+    }
+  }
+  
 /* End Global Rules */
 /* Start Frame Works */
-
+.light {
+    text-align: center;
+    color: #99999931;
+    margin-bottom: 0;
+    padding: 0;
+}
+.comment {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position:relative;
+    top: -35px;
+    font-weight: 300;
+    font-size: larger;
+    color: #666;
+}   
 /* End Frame Works */
 /* Start Header style */
 #logo {
@@ -178,7 +214,6 @@ header .container #links #nav-bar li:not(:last-child) {
 #service-ad .feat{
     display: grid;
     justify-content: center;
-    margin-top: 50px;
     grid-template-columns: auto;
     grid-template-rows: 100px 50px;
     text-align: center;
@@ -194,27 +229,10 @@ header .container #links #nav-bar li:not(:last-child) {
 /* End service ad section */
 /* Start services section */
 #services {
-    height: 600px;
-    width: 80%;
+    /* height: 600px; */
+    /* width: 80%; */
     margin-left: auto;
     margin-right: auto;
-}
-.light {
-    text-align: center;
-    font-size: 10vh;
-    color: #99999931;
-    margin-bottom: 0;
-    padding: 0;
-}
-.comment {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    position:relative;
-    top: -35px;
-    font-weight: 300;
-    font-size: larger;
-    color: #666;
 }
 #services > .container {
     display: grid;
