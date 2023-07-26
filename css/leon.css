@@ -76,7 +76,7 @@ body {
         margin: 0;
     }
     #contact .contact-content p{
-        margin-top: 0;
+        margin-top: 10px;
     }
     footer {
         font-size: 14px;
@@ -121,6 +121,9 @@ body {
     #about .about-content .art::before,#about .about-content .art::after,#about .about-content .art .supp {
         display: none;
     }
+    #contact .contact-content p{
+        margin-top: 30px;
+    }
 }
 /* Large */
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -145,6 +148,9 @@ body {
     #about .about-content .text .hr {
         align-self: flex-start;
     }
+    #contact .contact-content p{
+        margin-top: 30px;
+    }
 }
 @media (min-width: 1200px) {
     .container {
@@ -161,6 +167,9 @@ body {
     }
     #about .about-content .text .hr {
         align-self: flex-start;
+    }
+    #contact .contact-content p{
+        margin-top: 30px;
     }
 } 
 /* End Global Rules */
@@ -496,11 +505,12 @@ header .container #links #nav-bar li:not(:last-child) {
 a{
     text-decoration: none;
 }
-#contact .contact-content p{
-    margin-top: 30px;
-}
-#contact .contact-content .social-network a, #contact .contact-content .msg{
+#contact .contact-content .social-network a{
     color: var(--alt-green);
+}
+#contact .contact-content .msg{
+    color: var(--alt-green);
+    letter-spacing: -1.5px;
 }
 /* End Contact section */
 /* Start footer section */
